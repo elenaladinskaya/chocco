@@ -1,0 +1,56 @@
+.button {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 100px;
+  padding: 22px 41px;
+  line-height: 1;
+  outline: none;
+  cursor: pointer;
+  transition: .3s;
+
+  &--theme-light {
+    background: #fff;
+    color: $darkGreen;
+
+    &:hover {
+      color: #fff;
+      background: $darkGreen;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 2px $darkGreen;
+    }
+  }
+
+  &--theme-darkgreen {
+    background: #2E4E3F;
+    color: #fff;
+
+    &:hover {
+      color: $darkGreen;
+      background: #fff;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 2px black;
+    }
+  }
+
+  &--theme-transparent {
+    font-weight: normal;
+    color: $green;
+    text-transform: none;
+    background: transparent;
+
+    &:hover {
+      color: #000;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 2px $darkGreen;
+    }
+  }
+}

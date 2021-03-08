@@ -1,0 +1,19 @@
+.reviews-section {
+  background: url("../img/decor/side-leaf-2.png") left bottom no-repeat;
+  position: relative;
+  z-index: $z-decor;
+
+  &::before {
+    position: absolute;
+    content: url("../img/decor/straw.png");
+    right: 1%;
+    top: 66px;
+  }
+
+  &::after {
+    position: absolute;
+    content: url("../img/decor/berries.png");
+    left: 1%;
+    bottom: -108px;
+  }
+}

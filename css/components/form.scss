@@ -1,0 +1,63 @@
+.form {
+  display: flex;
+}
+
+.form__col {
+  flex: 1;
+  margin-right: 27px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.form__row {
+  display: flex;
+  margin-bottom: 14px;
+
+  &--textarea {
+    margin-bottom: 28px;
+  }
+
+  &--controls {
+    margin-bottom: 28px;
+  }
+}
+
+.form__block {
+  flex: 1;
+  margin-right: 17px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.form__title {
+  color: $green;
+}
+
+.form__input {
+  width: 100%; // растягивает строки на всю ширину блока
+  font-size: 14px;
+  color: #000;
+  border: 3px solid transparent;
+  background: #FFFFFF;
+  border-radius: 4px;
+  padding: 17px 12px;
+  
+  &--textarea {
+    height: 152px;
+    resize: none;
+  }
+  
+  &:focus {
+    border-color: #DEE2BD;
+    outline: none;
+  }
+}
+
+.form__controls {
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,609 @@
+@charset "UTF-8";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap");
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.42;
+  color: #666666;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-width: 950px;
+  min-height: 100%;
+}
+
+.container {
+  width: 930px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hero {
+  background: url("../img/decor/big-leaf.png") right bottom no-repeat;
+  color: #fff;
+  background-color: #61C4D9;
+  height: 100vh;
+  min-height: 650px;
+  padding: 24px 0 50px 0;
+  position: relative;
+}
+.hero::before {
+  content: url("../img/decor/leaf.png");
+  position: absolute;
+  bottom: -40px;
+  left: 2%;
+}
+.hero::after {
+  content: url("../img/decor/berries-and-leafs.png");
+  position: absolute;
+  right: 0;
+  bottom: -52px;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 930px;
+  height: 100%;
+  background: url("../img/decor/chocolates.png") right center/50% auto no-repeat;
+}
+
+.hero__title-section {
+  width: 46%;
+}
+
+.hero__main-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.hero__title-desc {
+  font-size: 21px;
+  line-height: 1.2;
+  margin-bottom: 34px;
+  padding-right: 14%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.phone-number {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+}
+
+.phone-number__icon-elem {
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+}
+
+.menu__item {
+  margin-right: 27px;
+}
+.menu__item:last-child {
+  margin-right: 0px;
+}
+
+.features {
+  display: flex;
+}
+
+.features__item {
+  margin-right: 37px;
+}
+.features__item:last-child {
+  margin-right: 0;
+}
+
+.feature {
+  display: flex;
+}
+
+.feature__icon {
+  width: 45px;
+  margin-right: 7px;
+}
+
+.feature__text {
+  font-size: 16px;
+  line-height: 1.2;
+  max-width: 85px;
+}
+
+.button {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 100px;
+  padding: 22px 41px;
+  line-height: 1;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.button--theme-light {
+  background: #fff;
+  color: #365A49;
+}
+.button--theme-light:hover {
+  color: #fff;
+  background: #365A49;
+}
+.button--theme-light:focus {
+  box-shadow: 0 0 0 2px #365A49;
+}
+.button--theme-darkgreen {
+  background: #2E4E3F;
+  color: #fff;
+}
+.button--theme-darkgreen:hover {
+  color: #365A49;
+  background: #fff;
+}
+.button--theme-darkgreen:focus {
+  box-shadow: 0 0 0 2px black;
+}
+.button--theme-transparent {
+  font-weight: normal;
+  color: #497870;
+  text-transform: none;
+  background: transparent;
+}
+.button--theme-transparent:hover {
+  color: #000;
+}
+.button--theme-transparent:focus {
+  box-shadow: 0 0 0 2px #365A49;
+}
+
+.fixed-menu {
+  position: fixed;
+  top: 20%;
+  right: 5%;
+  z-index: 100;
+}
+
+.fixed-menu__item {
+  margin-bottom: 5px;
+}
+.fixed-menu__item:last-child {
+  margin-bottom: 0;
+}
+.fixed-menu__item--active .fixed-menu__link {
+  border-color: #fff;
+}
+
+.fixed-menu__link {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  position: relative;
+}
+.fixed-menu__link::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 50%;
+  top: 50%;
+  /* центрирование */
+  left: 50%;
+  /* центрирование */
+  transform: translate(-50%, -50%);
+  /* центрирование */
+}
+
+.section {
+  height: 100vh;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section__title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #292929;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 28px;
+}
+.section__title--green {
+  color: #365A49;
+  margin-bottom: 54px;
+}
+
+.headline {
+  text-align: center;
+}
+
+.headline__title {
+  margin-bottom: 14px;
+}
+
+.headline__subtitle {
+  line-height: 1.3;
+  padding: 0 26%;
+  margin-bottom: 48px;
+}
+
+.benefits-section {
+  background: url("../img/decor/side-leaf-1.png") left center no-repeat;
+  position: relative;
+}
+.benefits-section::before {
+  position: absolute;
+  content: url("../img/decor/bars.png");
+  bottom: -106px;
+  left: 0;
+}
+
+.benefit {
+  text-align: center;
+}
+
+.benefit__image {
+  margin-bottom: 12px;
+}
+
+.benefit__image-wrapper {
+  display: inline-block;
+  width: 126px;
+  height: 126px;
+  position: relative;
+  background: #F2F5F4;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.benefit__icon {
+  position: absolute;
+  width: 64px;
+  height: 69px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.benefit__title {
+  font-size: 27px;
+  font-weight: 700;
+  color: #292929;
+  margin-bottom: 14px;
+}
+
+.benefit__desc {
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.benefit__desc p {
+  line-height: 1.3;
+}
+
+.benefits {
+  display: flex;
+}
+
+.benefits__item {
+  position: relative;
+  flex: 1;
+  padding: 0 3%;
+}
+.benefits__item::before {
+  content: url("../img/decor/separator.png");
+  position: absolute;
+  width: 68px;
+  top: 60px;
+  right: 0;
+  transform: translateX(50%);
+}
+.benefits__item:first-child {
+  padding-left: 0;
+}
+.benefits__item:last-child {
+  padding-right: 0;
+}
+.benefits__item:last-child:before {
+  display: none;
+}
+
+.reviews-section {
+  background: url("../img/decor/side-leaf-2.png") left bottom no-repeat;
+  position: relative;
+  z-index: 10;
+}
+.reviews-section::before {
+  position: absolute;
+  content: url("../img/decor/straw.png");
+  right: 1%;
+  top: 66px;
+}
+.reviews-section::after {
+  position: absolute;
+  content: url("../img/decor/berries.png");
+  left: 1%;
+  bottom: -108px;
+}
+
+.reviews__display {
+  background: #F8FAF9 url("../img/decor/review-bg.jpg") top 24px right no-repeat;
+  padding: 42px;
+  margin-bottom: 16px;
+}
+
+.reviews__display-inner {
+  display: flex;
+  align-items: center;
+}
+
+.reviews__avatar {
+  width: 253px;
+  height: 264px;
+}
+
+.reviews__avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reviews__content {
+  width: 52%;
+  margin-left: 40px;
+}
+
+.reviews__title {
+  font-size: 27px;
+  font-weight: 700;
+  color: #292929;
+  margin-bottom: 10px;
+}
+
+.reviews__text {
+  line-height: 1.3;
+  margin-bottom: 22px;
+}
+.reviews__text p {
+  margin-bottom: 6px;
+}
+.reviews__text p:last-child {
+  margin-bottom: 0;
+}
+
+.reviews__author {
+  font-weight: 500;
+  color: #292929;
+}
+
+.reviews__switcher {
+  display: flex;
+  justify-content: center;
+}
+
+.interactive-avatar {
+  width: 74px;
+  height: 74px;
+  border: 4px solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.interactive-avatar--active {
+  border-color: #365A49;
+}
+
+.interactive-avatar__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.order-section {
+  background: url("../img/bg/berries-bg.jpg") center center/100% no-repeat;
+  position: relative;
+}
+.order-section::before {
+  position: absolute;
+  content: url("../img/decor/blueberry.png");
+  left: 4%;
+  bottom: 70px;
+}
+.order-section::after {
+  position: absolute;
+  content: url("../img/decor/leaf-2.png");
+  right: 1%;
+  bottom: 60px;
+}
+
+.form {
+  display: flex;
+}
+
+.form__col {
+  flex: 1;
+  margin-right: 27px;
+}
+.form__col:last-child {
+  margin-right: 0;
+}
+
+.form__row {
+  display: flex;
+  margin-bottom: 14px;
+}
+.form__row--textarea {
+  margin-bottom: 28px;
+}
+.form__row--controls {
+  margin-bottom: 28px;
+}
+
+.form__block {
+  flex: 1;
+  margin-right: 17px;
+}
+.form__block:last-child {
+  margin-right: 0;
+}
+
+.form__title {
+  color: #497870;
+}
+
+.form__input {
+  width: 100%;
+  font-size: 14px;
+  color: #000;
+  border: 3px solid transparent;
+  background: #FFFFFF;
+  border-radius: 4px;
+  padding: 17px 12px;
+}
+.form__input--textarea {
+  height: 152px;
+  resize: none;
+}
+.form__input:focus {
+  border-color: #DEE2BD;
+  outline: none;
+}
+
+.form__controls {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.radio {
+  display: flex;
+  cursor: pointer;
+  -webkit-user-select: none;
+          user-select: none;
+  margin-right: 24px;
+  margin-bottom: 18px;
+}
+.radio--checkbox .radio__visible {
+  border-radius: 4px;
+}
+.radio--checkbox .radio__visible::before {
+  background: url("../img/icons/tick.svg") center center no-repeat;
+}
+.radio:last-child {
+  margin-right: 0;
+}
+
+.radio__elem {
+  display: none;
+}
+.radio__elem:checked ~ .radio__visible::before {
+  display: block;
+}
+
+.radio__visible {
+  width: 26px;
+  height: 26px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+}
+.radio__visible::before {
+  content: "";
+  display: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #365A49;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.radio__title {
+  color: #497870;
+}

@@ -1,0 +1,42 @@
+.fixed-menu {
+  position: fixed;
+  top: 20%;
+  right: 5%;
+  z-index: $z-fixed-menu;
+}
+
+.fixed-menu__item {
+  margin-bottom: 5px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--active {
+    .fixed-menu__link {
+      border-color: #fff;
+    }
+  }
+}
+
+.fixed-menu__link {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    border-radius: 50%;
+    top: 50%; /* центрирование */
+    left: 50%; /* центрирование */
+    transform: translate(-50%, -50%); /* центрирование */
+  }
+}

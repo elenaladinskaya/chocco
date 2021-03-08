@@ -1,0 +1,40 @@
+$containerWidth: 930px;
+$baseFontSize: 18px;
+$textLineHeight: 1.3;
+
+// colors
+$blue: #61C4D9; 
+$green: #497870;
+$darkGreen: #365A49;
+$black: #292929; // заголовки
+
+// z-indexes
+$z-fixed-menu: 100;
+$z-decor: 10;
+
+// normalize
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
+
+// setups
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap');
+@import "layout";
+
+// components 
+@import "components/hero";
+@import "components/header";
+@import "components/menu";
+@import "components/features";
+@import "components/feature";
+@import "components/button";
+@import "components/fixed-menu";
+@import "components/section";
+@import "components/headline";
+@import "components/benefits-section";
+@import "components/benefit";
+@import "components/benefits";
+@import "components/reviews-section";
+@import "components/reviews";
+@import "components/interactive-avatar";
+@import "components/order-section";
+@import "components/form";
+@import "components/radio";
