@@ -473,7 +473,7 @@ footer {
   border-radius: 50%;
   overflow: hidden;
 }
-.interactive-avatar--active {
+.interactive-avatar--active, .interactive-avatar:hover {
   border-color: #365A49;
 }
 
@@ -607,3 +607,4 @@ footer {
 .radio__title {
   color: #497870;
 }
+/*# sourceMappingURL=main.css.map */
