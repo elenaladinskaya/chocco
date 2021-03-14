@@ -1,17 +1,11 @@
 .header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
-.phone-number {
-  font-size: 22px;
-  display: flex;
-  align-items: center;
-}
-
-.phone-number__icon-elem {
-  width: 14px;
-  height: 14px;
-  margin-right: 6px;
+.phone-number.header__phone-number {
+  @include tablets {
+    display: none;
+  }
 }

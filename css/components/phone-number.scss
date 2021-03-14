@@ -1,0 +1,27 @@
+.phone-number {
+  font-size: rem(22px);
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  text-align: center;
+
+  @include phones {
+    display: block;
+  }
+
+  &--theme-green {
+    color: $green;
+  }
+}
+
+.phone-number__icon-elem {
+  flex-shrink: 0; // запрещает элементу сжиматься
+  width: rem(14px);
+  height: rem(14px);
+  margin-right: rem(6px);
+
+  @include phones {
+    display: inline-block;
+    margin-right: 2px;
+  }
+}

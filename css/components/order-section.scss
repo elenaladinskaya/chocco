@@ -1,18 +1,25 @@
 .order-section {
-  background: url("../img/bg/berries-bg.jpg") center center / 100% no-repeat;
+  background: url("../img/bg/berries-bg.jpg") center center / cover no-repeat;
   position: relative;
+
+  @include tablets {
+    &:before,
+    &::after {
+      display: none;
+    }
+  }
 
   &::before {
     position: absolute;
     content: url("../img/decor/blueberry.png");
     left: 4%;
-    bottom: 70px;
+    bottom: rem(70px);
   }
 
   &::after {
     position: absolute;
     content: url("../img/decor/leaf-2.png");
     right: 1%;
-    bottom: 60px;
+    bottom: rem(60px);
   }
 }

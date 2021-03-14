@@ -1,17 +1,62 @@
 .reviews__display {
-  background: #F8FAF9 url("../img/decor/review-bg.jpg") top 24px right no-repeat;
-  padding: 42px;
-  margin-bottom: 16px;
+  background: #F8FAF9 url("../img/decor/review-bg.jpg") top rem(24px) right no-repeat;
+  padding: rem(42px);
+  margin-bottom: rem(16px);
+  position: relative;
+  overflow: hidden;
+
+  @include tablets {
+    padding: rem(58px) rem(25px) rem(28px);
+    background-position: top rem(18px) right;
+    margin-bottom: rem(30px);
+  }
+
+  @include phones {
+    padding: rem(58px) 0 0 0;
+    margin-bottom: rem(50px);
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: rem(83px);
+    height: rem(83px);
+    background: #fff;
+    border-radius: 50%;
+    top: rem(-56px);
+    left: 50%;
+    transform: translate(-50%);
+
+    @include phones {
+      display: none;
+    }
+  }
 }
 
 .reviews__display-inner {
   display: flex;
   align-items: center;
+
+  @include tablets {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .reviews__avatar {
-  width: 253px;
-  height: 264px;
+  width: rem(253px);
+  height: rem(264px);
+
+  @include tablets {
+    width: rem(138px);
+    height: rem(138px);
+    margin-bottom: rem(32px);
+  }
+
+  @include phones {
+    margin-bottom: rem(18px);
+  }
 }
 
 .reviews__avatar-img {
@@ -22,22 +67,41 @@
 
 .reviews__content {
   width: 52%;
-  margin-left: 40px;
+  margin-left: rem(40px);
+
+  @include tablets {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
 }
 
 .reviews__title {
-  font-size: 27px;
+  font-size: rem(27px);
   font-weight: 700;
   color: $black;
-  margin-bottom: 10px;
+  margin-bottom: rem(10px);
+
+  @include phones {
+    padding: 0 24%;
+  }
 }
 
 .reviews__text {
   line-height: $textLineHeight;
-  margin-bottom: 22px;
+  margin-bottom: rem(22px);
+
+  @include tablets {
+    margin-bottom: rem(20px);
+  }
+
+  @include phones {
+    padding: 0 rem(20px);
+    margin-bottom: rem(10px);
+  }
 
   & p {
-    margin-bottom: 6px;
+    margin-bottom: rem(6px);
 
     &:last-child {
       margin-bottom: 0;
@@ -47,7 +111,12 @@
 
 .reviews__author {
   font-weight: 500;
-  color: $black;  
+  color: $black;
+
+  @include phones {
+    padding-top: rem(10px);
+    background: #fff;
+  }
 }
 
 .reviews__switcher {

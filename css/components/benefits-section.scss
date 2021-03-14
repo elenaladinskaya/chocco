@@ -1,11 +1,28 @@
 .benefits-section {
   background: url("../img/decor/side-leaf-1.png") left center no-repeat;
   position: relative;
+
+  @include tablets {
+    background-position-y: 12%;
+  }
+
+  @include phones {
+    background: none;
+  }
    
   &::before {
     position: absolute;
     content: url("../img/decor/bars.png");
-    bottom: -106px;
+    bottom: rem(-106px);
     left: 0;
+
+    @include tablets {
+      bottom: rem(-56px);
+    }
+
+    @include phones {
+      display: none;
+    }
+
    }
 }

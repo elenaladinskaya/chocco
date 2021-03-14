@@ -1,15 +1,21 @@
 .button {
   display: inline-block;
-  font-size: 16px;
+  font-size: rem(16px);
   font-weight: 800;
   text-transform: uppercase;
   border: none;
-  border-radius: 100px;
-  padding: 22px 41px;
+  border-radius: rem(100px);
+  padding: rem(22px) rem(42px);
   line-height: 1;
   outline: none;
   cursor: pointer;
   transition: .3s;
+
+  @include phones {
+    font-size: rem(19px);
+  padding: rem(24px) rem(44px);
+
+  }
 
   &--theme-light {
     background: #fff;
@@ -50,7 +56,7 @@
     }
 
     &:focus {
-      box-shadow: 0 0 0 2px $darkGreen;
+      box-shadow: 0 0 0 rem(2px) $darkGreen;
     }
   }
 }

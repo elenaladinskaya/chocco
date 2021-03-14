@@ -3,15 +3,30 @@
   color: #fff;
   background-color: $blue;
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
   padding: 24px 0 50px 0;
-  // margin-bottom: 100px;
   position: relative;
+
+  @include tablets {
+    background-position-y: 25%;
+  }
+
+  @include phones {
+    background-position-y: 14%;
+    background-size: 70%;
+  }
+
+  &::before,
+  &::after {
+    @include tablets {
+      display: none;
+    }
+  }
 
   &::before {
     content: url('../img/decor/leaf.png');
     position: absolute;
-    bottom: -40px;
+    bottom: rem(-40px);
     left: 2%;
   }
 
@@ -19,7 +34,7 @@
     content: url('../img/decor/berries-and-leafs.png');
     position: absolute;
     right: 0;
-    bottom: -52px;
+    bottom: rem(-52px);
   }
 }
 
@@ -27,26 +42,78 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: $containerWidth;
+  max-width: $containerWidth;
   height: 100%;
   background: url("../img/decor/chocolates.png") right center / 50% auto no-repeat;
+
+  @include tablets {
+    background: none;
+  }
 }
 
 .hero__title-section {
   width: 46%;
+
+  @include tablets {
+    flex: 1;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+      content: "";
+      width: rem(374px);
+      height: rem(378px);
+      background: url("../img/decor/hero-bars.png") center center / contain no-repeat;
+      padding-bottom: rem(40px);
+    }
+  }
 }
 
 .hero__main-title {
-  font-size: 48px;
+  font-size: rem(48px);
   font-weight: 700;
   line-height: 1.2;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
+
+  @include tablets {
+    line-height: $textLineHeight;
+    margin-bottom: rem(3px);
+  }
+
+  @include phones {
+    font-size: rem(42px);
+    line-height: 1;
+    padding: 0 14%;
+    padding-top: 2%;
+    margin-bottom: rem(6px);
+  }
 }
 
 .hero__title-desc {
-  font-size: 21px;
+  font-size: rem(21px);
   line-height: 1.2;
-  margin-bottom: 34px;
+  margin-bottom: rem(34px);
   padding-right: 14%;
+
+  @include tablets {
+    padding: 0 26%;
+    line-height: $textLineHeight;
+    margin-bottom: rem(26px);
+  }
+
+  @include phones {
+    font-size: rem(20px);
+    padding: 0 18%;
+  }
+}
+
+.hero__icons-section {
+  @include tablets {
+    display: none;
+  }
 }
