@@ -241,6 +241,12 @@ footer {
   }
 }
 
+.logo {
+  width: 2.9444444444rem;
+  height: 2.1111111111rem;
+  fill: #fff;
+}
+
 .menu {
   padding-top: 0.2222222222rem;
   margin: 0 1.1111111111rem;
@@ -286,14 +292,18 @@ footer {
   color: #497870;
 }
 
-.phone-number__icon-elem {
+.phone-number__icon {
   flex-shrink: 0;
   width: 0.7777777778rem;
   height: 0.7777777778rem;
+  fill: #fff;
   margin-right: 0.3333333333rem;
 }
+.phone-number__icon--theme-green {
+  fill: #497870;
+}
 @media screen and (max-width: 480px) {
-  .phone-number__icon-elem {
+  .phone-number__icon {
     display: inline-block;
     margin-right: 2px;
   }
@@ -336,8 +346,13 @@ footer {
 }
 
 .feature__icon {
-  width: 2.5rem;
   margin-right: 0.3888888889rem;
+}
+
+.feature__img {
+  width: 2.5rem;
+  height: 2.1111111111rem;
+  fill: #fff;
 }
 
 .feature__text {
@@ -1083,7 +1098,7 @@ footer {
   left: 0;
   right: 0;
   background: #fff;
-  padding: 14px 0 17px 0;
+  padding: 0.7777777778rem 0 0.7222222222rem 0;
 }
 @media screen and (max-width: 480px) {
   .footer {
@@ -1105,17 +1120,28 @@ footer {
 .socials {
   display: flex;
   align-items: center;
+  padding-top: 0.8888888889rem;
+}
+@media screen and (max-width: 480px) {
+  .socials {
+    padding-top: 0;
+  }
 }
 
 .socials__item {
-  width: 22px;
-  margin-right: 12px;
+  width: 1.2222222222rem;
+  margin-right: 0.6666666667rem;
 }
 .socials__item:last-child {
   margin-right: 0;
 }
 
 .socials__img {
-  width: 100%;
+  width: 1.1111111111rem;
+  height: 1.1111111111rem;
+  fill: #B3B3B3;
+}
+.socials__img:hover {
+  fill: #292929;
 }
 /*# sourceMappingURL=main.css.map */

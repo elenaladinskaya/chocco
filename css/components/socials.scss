@@ -1,11 +1,16 @@
 .socials {
   display: flex;
   align-items: center;
+  padding-top: rem(16px);
+
+  @include phones {
+    padding-top: 0;
+  }
 }
 
 .socials__item {
-  width: 22px;
-  margin-right: 12px;
+  width: rem(22px);
+  margin-right: rem(12px);
 
   &:last-child {
     margin-right: 0;
@@ -13,5 +18,11 @@
 }
 
 .socials__img {
-  width: 100%;
+  width: rem(20px);
+  height: rem(20px);
+  fill: #B3B3B3;
+
+  &:hover {
+    fill: $black;
+  }
 }

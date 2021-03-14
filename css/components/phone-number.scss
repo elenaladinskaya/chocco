@@ -14,11 +14,16 @@
   }
 }
 
-.phone-number__icon-elem {
+.phone-number__icon {
   flex-shrink: 0; // запрещает элементу сжиматься
   width: rem(14px);
   height: rem(14px);
+  fill: #fff;
   margin-right: rem(6px);
+
+  &--theme-green {
+    fill: $green;
+  }
 
   @include phones {
     display: inline-block;
