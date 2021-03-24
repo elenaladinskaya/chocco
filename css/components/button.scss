@@ -4,7 +4,7 @@
   font-weight: 800;
   text-transform: uppercase;
   border: none;
-  border-radius: rem(100px);
+  border-radius: 100px;
   padding: rem(22px) rem(42px);
   line-height: 1;
   outline: none;
@@ -13,8 +13,7 @@
 
   @include phones {
     font-size: rem(19px);
-  padding: rem(24px) rem(44px);
-
+    padding: rem(24px) rem(44px);
   }
 
   &--theme-light {
@@ -32,8 +31,8 @@
   }
 
   &--theme-darkgreen {
-    background: #2E4E3F;
     color: #fff;
+    background: #2E4E3F;
 
     &:hover {
       color: $darkGreen;
@@ -42,6 +41,16 @@
 
     &:focus {
       box-shadow: 0 0 0 2px black;
+    }
+  }
+
+  &--theme-lightgreen {
+    color: #fff;
+    background: $green;
+
+    &:hover {
+      background: #2E4E3F;
+      color: #fff;
     }
   }
 

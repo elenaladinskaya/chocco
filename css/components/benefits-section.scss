@@ -15,6 +15,7 @@
     content: url("../img/decor/bars.png");
     bottom: rem(-106px);
     left: 0;
+    z-index: $z-decor;
 
     @include tablets {
       bottom: rem(-56px);

@@ -11,9 +11,12 @@ $blue: #61C4D9;
 $green: #497870;
 $darkGreen: #365A49;
 $black: #292929; // заголовки
+$grey: #313131;
+$lightGrey: #F8FAF9;
 
 // z-indexes
 $z-fixed-menu: 100;
+$z-fullscreen-menu: 1000;
 $z-decor: 10;
 
 // media
@@ -26,8 +29,9 @@ $z-decor: 10;
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap');
 @import "layout";
 
-
 // components 
+@import "components/fixed-menu";
+@import "components/fullscreen-menu";
 @import "components/hero";
 @import "components/header";
 @import "components/logo";
@@ -37,12 +41,14 @@ $z-decor: 10;
 @import "components/features";
 @import "components/feature";
 @import "components/button";
-@import "components/fixed-menu";
 @import "components/section";
 @import "components/headline";
 @import "components/benefits-section";
 @import "components/benefit";
 @import "components/benefits";
+@import "components/slider-section";
+@import "components/slide";
+@import "components/slider";
 @import "components/reviews-section";
 @import "components/reviews";
 @import "components/interactive-avatar";

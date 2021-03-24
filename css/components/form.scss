@@ -69,13 +69,19 @@
 .form__input {
   width: 100%; // растягивает строки на всю ширину блока
   font-size: rem(14px);
+  height: rem(58px);
   color: #000;
   border: rem(3px) solid transparent;
   background: #FFFFFF;
   border-radius: rem(4px);
   padding: rem(17px) rem(12px);
 
+  &--error {
+    border: 1px solid red;
+  }
+
   @include tablets {
+    height: rem(36px);
     padding: rem(10px);
   }
 
@@ -92,6 +98,10 @@
     border-color: #DEE2BD;
     outline: none;
   }
+}
+
+.form__error {
+  color: red;
 }
 
 .form__controls {
