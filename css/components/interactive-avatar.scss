@@ -10,7 +10,7 @@
     height: rem(78px);
   }
 
-  &--active,
+  &.active,
   &:hover {
     border-color: $darkGreen;
   }

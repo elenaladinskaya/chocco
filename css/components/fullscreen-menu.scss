@@ -8,16 +8,21 @@
   overflow: hidden;
   z-index: $z-fullscreen-menu;
   display: none;
+
+  &.active {
+    display: block;
+  
+    @include phones {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 }
 
-.active {
-  display: block;
+}
 
-  @include phones {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.body-active-menu {
+  overflow: hidden;
 }
 
 .fullscreen-menu__close {
@@ -26,6 +31,7 @@
   right: 39px;
   width: 26px;
   height: 26px;
+  opacity: .7;
 
   &::before,
   &::after {

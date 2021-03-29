@@ -1,9 +1,10 @@
-.reviews__display {
-  background: #F8FAF9 url("../img/decor/review-bg.jpg") top rem(24px) right no-repeat;
-  padding: rem(42px);
-  margin-bottom: rem(16px);
+.reviews__list {
   position: relative;
+  min-height: 280px;
+  padding: rem(42px);
   overflow: hidden;
+  background: #F8FAF9 url("../img/decor/review-bg.jpg") top rem(24px) right no-repeat;
+  margin-bottom: rem(16px);
 
   @include tablets {
     padding: rem(58px) rem(25px) rem(28px);
@@ -34,7 +35,23 @@
   }
 }
 
-.reviews__display-inner {
+.reviews__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  opacity: 0;
+
+  &.active {
+    position: static;
+    opacity: 1;
+    pointer-events: unset;
+  }
+}
+
+.reviews__item-inner {
   display: flex;
   align-items: center;
 

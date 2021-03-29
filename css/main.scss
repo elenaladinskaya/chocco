@@ -9,7 +9,7 @@ $phones: 480px;
 // colors
 $blue: #61C4D9; 
 $green: #497870;
-$darkGreen: #365A49;
+$darkGreen: #2E4E3F;
 $black: #292929; // заголовки
 $grey: #313131;
 $lightGrey: #F8FAF9;
@@ -17,6 +17,7 @@ $lightGrey: #F8FAF9;
 // z-indexes
 $z-fixed-menu: 100;
 $z-fullscreen-menu: 1000;
+$z-dropdown: 20;
 $z-decor: 10;
 
 // media
@@ -32,6 +33,7 @@ $z-decor: 10;
 // components 
 @import "components/fixed-menu";
 @import "components/fullscreen-menu";
+@import "components/modal";
 @import "components/hero";
 @import "components/header";
 @import "components/logo";
@@ -49,6 +51,7 @@ $z-decor: 10;
 @import "components/slider-section";
 @import "components/slide";
 @import "components/slider";
+@import "components/team";
 @import "components/reviews-section";
 @import "components/reviews";
 @import "components/interactive-avatar";

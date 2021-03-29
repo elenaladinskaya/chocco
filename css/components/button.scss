@@ -25,23 +25,23 @@
       background: $darkGreen;
     }
 
-    &:focus {
-      box-shadow: 0 0 0 2px $darkGreen;
-    }
+    // &:focus {
+    //   box-shadow: 0 0 0 2px $darkGreen;
+    // }
   }
 
   &--theme-darkgreen {
     color: #fff;
-    background: #2E4E3F;
+    background: $darkGreen;
 
     &:hover {
       color: $darkGreen;
       background: #fff;
     }
 
-    &:focus {
-      box-shadow: 0 0 0 2px black;
-    }
+    // &:focus {
+    //   box-shadow: 0 0 0 2px black;
+    // }
   }
 
   &--theme-lightgreen {
@@ -64,8 +64,8 @@
       color: #000;
     }
 
-    &:focus {
-      box-shadow: 0 0 0 rem(2px) $darkGreen;
-    }
+    // &:focus {
+    //   box-shadow: 0 0 0 rem(2px) $darkGreen;
+    // }
   }
 }

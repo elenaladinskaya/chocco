@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  // width: $containerWidth;
 
   @include tablets {
     flex-direction: column;
@@ -72,7 +73,7 @@
       left: 100%;
       opacity: .95;
 
-      @media screen and (max-width: 900px) {
+      @media screen and (max-width: 945px) {
         top: 100%;
         left: 0;
       }
@@ -122,6 +123,7 @@
   padding: rem(30px) rem(28px);
   opacity: 0;
   transition: opacity .5s;
+  z-index: $z-dropdown;
 }
 
 .slide__dropdown-item {
@@ -233,4 +235,8 @@
     margin-right: 0;
     margin-bottom: rem(18px);
   }
+}
+
+.slide__btn {
+  z-index: 10;
 }
