@@ -32,10 +32,10 @@ $('.form').submit(e => {
       url: "https://webdev-api.loftschool.com/sendmail",
       method: "post",
       data: {
-        name: "name.val()",
-        phone: "phone.val()",
-        comment: "comment.val()",
-        to: "to.val()",
+        name: name.val(),
+        phone: phone.val(),
+        comment: comment.val(),
+        to: to.val(),
       },
       error: data => {
 
