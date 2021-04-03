@@ -9,6 +9,27 @@
   }
 }
 
+.fixed-menu__list {
+
+  &--theme-dark {
+    .fixed-menu__link::before {
+      background: $black;
+    }
+
+    .fixed-menu__item:hover {
+      .fixed-menu__link {
+        border-color: $black;
+      }
+    }
+
+    .fixed-menu__item.active {
+      .fixed-menu__link {
+        border-color: $black;
+      }
+    }
+  }
+}
+
 .fixed-menu__item {
   margin-bottom: rem(5px);
 
@@ -16,7 +37,13 @@
     margin-bottom: 0;
   }
 
-  &--active {
+  &:hover {
+    .fixed-menu__link {
+      border-color: #fff;
+    }
+  }
+
+  &.active {
     .fixed-menu__link {
       border-color: #fff;
     }
@@ -30,6 +57,7 @@
   border-radius: 50%;
   border: rem(1px) solid transparent;
   position: relative;
+  transition: border .2s;
 
   &::before {
     position: absolute;
@@ -39,8 +67,11 @@
     height: rem(6px);
     background: #fff;
     border-radius: 50%;
-    top: 50%; /* центрирование */
-    left: 50%; /* центрирование */
-    transform: translate(-50%, -50%); /* центрирование */
+    top: 50%;
+    /* центрирование */
+    left: 50%;
+    /* центрирование */
+    transform: translate(-50%, -50%);
+    /* центрирование */
   }
 }

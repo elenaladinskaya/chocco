@@ -97,4 +97,17 @@ footer {
   @include phones {
     width: 96%;
   }
+
+  &--fullscreen {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+
+    &.active {
+      justify-content: flex-end;
+    }
+  }
 }

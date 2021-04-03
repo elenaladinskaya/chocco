@@ -2,7 +2,6 @@
   background: url("../img/decor/big-leaf.png") right bottom no-repeat;
   color: #fff;
   background-color: $blue;
-  height: 100vh;
   min-height: rem(650px);
   padding: 24px 0 50px 0;
   position: relative;
@@ -57,6 +56,7 @@
   @include tablets {
     flex: 1;
     width: 100%;
+    height: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;

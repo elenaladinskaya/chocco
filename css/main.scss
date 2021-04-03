@@ -7,11 +7,12 @@ $tablets: 768px;
 $phones: 480px;
 
 // colors
-$blue: #61C4D9; 
+$blue: #61C4D9;
 $green: #497870;
 $darkGreen: #2E4E3F;
 $black: #292929; // заголовки
 $grey: #313131;
+$middleGrey: #626262;
 $lightGrey: #F8FAF9;
 
 // z-indexes
@@ -52,9 +53,12 @@ $z-decor: 10;
 @import "components/slide";
 @import "components/slider";
 @import "components/team";
+@import "components/menu-slide";
+@import "components/menu-slider";
 @import "components/reviews-section";
 @import "components/reviews";
 @import "components/interactive-avatar";
+@import "components/player";
 @import "components/order-section";
 @import "components/form";
 @import "components/radio";

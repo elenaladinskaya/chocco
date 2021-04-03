@@ -1,0 +1,69 @@
+.menu-slide {
+  height: 100%;
+
+  &.active {
+    .menu-slide__content-block {
+      width: 100%;
+    }
+  }
+}
+
+.menu-slide__content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.menu-slide__btn {
+  height: 100vh;
+  width: rem(102px);
+  padding: 0;
+  outline: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+
+  @include phones {
+    width: rem(90px);
+  }
+}
+
+.menu-slide-bg-1 {
+  background: url(../img/bg/acco-bg-1.png) center center/cover no-repeat;
+}
+
+.menu-slide-bg-2 {
+  background: url(../img/bg/acco-bg-2.png) center center/cover no-repeat;
+}
+
+.menu-slide-bg-3 {
+  background: url(../img/bg/acco-bg-3.png) center center/cover no-repeat;
+}
+
+.menu-slide__title {
+  padding-left: rem(450px);
+  font-size: rem(48px);
+  font-weight: 700;
+  color: #fff;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+
+  @include phones {
+    font-size: rem(40px);
+  }
+}
+
+.menu-slide__content-block {
+  width: 0;
+  overflow: hidden;
+}
+
+.menu-slide__text {
+  font-size: rem(16px);
+  line-height: 1.7;
+  color: #fff;
+  padding: rem(32px) rem(80px) rem(32px) rem(38px);
+
+  @include tablets {
+    padding: rem(32px) rem(53px);
+  }
+}

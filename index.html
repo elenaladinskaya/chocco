@@ -7,15 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CHOCCO | Натуральные шоколадные батончики</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
   <div class="wrapper">
-    <div class="maincontent">
+    <div class="maincontent" id="fullpage">
       <!-- Hero -->
-      <section class="hero">
+      <section class="section hero" id="section-0">
         <div class="container hero__container">
           <header class="header">
             <svg class="logo">
@@ -24,25 +24,25 @@
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__item">
-                  <a href="#" class="menu__link">О нас</a>
+                  <a href="#section-1" class="menu__link">О нас</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Батончики</a>
+                  <a href="#section-2" class="menu__link">Батончики</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Команда</a>
+                  <a href="#section-3" class="menu__link">Команда</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Меню</a>
+                  <a href="#section-4" class="menu__link">Меню</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Отзывы</a>
+                  <a href="#section-5" class="menu__link">Отзывы</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Как мы работаем</a>
+                  <a href="#section-6" class="menu__link">Как мы работаем</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Контакты</a>
+                  <a href="#section-8" class="menu__link">Контакты</a>
                 </li>
               </ul>
             </nav>
@@ -94,7 +94,7 @@
         </div>
       </section>
       <!-- Преимущества -->
-      <section class="section benefits-section">
+      <section class="section benefits-section" id="section-1">
         <div class="container">
           <div class="headline">
             <h2 class="section__title headline__title">Почему chocco?</h2>
@@ -153,7 +153,7 @@
         </div>
       </section>
       <!-- Слайдер -->
-      <section class="section slider-section section--bg-grey">
+      <section class="section slider-section section--bg-grey" id="section-2">
         <div class="container slider-container">
           <div class="slider__controls">
             <a href="#" class="slider__btn slider__btn--left">
@@ -382,7 +382,7 @@
         </div>
       </section>
       <!-- Команда -->
-      <section class="section team-section">
+      <section class="section team-section" id="section-3">
         <div class="container">
           <h2 class="section__title">Команда</h2>
           <ul class="team team--version-desktop">
@@ -490,8 +490,64 @@
             </li>
           </ul>
       </section>
+      <!-- Меню-слайдер -->
+      <section class="section section--fullscreen menu-slider-section" id="section-4">
+        <div class="container container--fullscreen">
+          <h2 class="section__title section__title--white section__title--left">Меню</h2>
+          <ul class="menu-slider">
+            <li class="menu-slider__item menu-slide">
+              <article class="menu-slide__content">
+                <button class="menu-slide__btn menu-slide-bg-1">
+                  <h2 class="menu-slide__title">Батончики с молоком</h2>
+                </button>
+                <div class="menu-slide__content-block">
+                  <div class="menu-slide__text">
+                    <p>Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и
+                      полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как
+                      классно, что можно питаться полезно и вкусно, а не как попало. Бабуля,
+                      конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю
+                      поздравить с днём Победы.</p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="menu-slider__item menu-slide">
+              <article class="menu-slide__content">
+                <button class="menu-slide__btn menu-slide-bg-2">
+                  <h2 class="menu-slide__title">С мёдом и фруктами</h2>
+                </button>
+                <div class="menu-slide__content-block">
+                  <div class="menu-slide__text">
+                    <p>Рекомендуем употреблять батончики вместе с кокосовым или миндальным
+                      молоком. Так и вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и
+                      радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля,
+                      конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю
+                      поздравить с днём Победы.</p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="menu-slider__item menu-slide">
+              <article class="menu-slide__content">
+                <button class="menu-slide__btn menu-slide-bg-3">
+                  <h2 class="menu-slide__title">Дикие ягоды</h2>
+                </button>
+                <div class="menu-slide__content-block">
+                  <div class="menu-slide__text">
+                    <p>Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и
+                      полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как
+                      классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не
+                      похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
       <!-- Отзывы -->
-      <section class="section reviews-section">
+      <section class="section reviews-section" id="section-5">
         <div class="container">
           <h2 class="section__title">Отзывы</h2>
           <div class="reviews__display">
@@ -567,12 +623,54 @@
             </li>
           </ul>
       </section>
+      <!-- Видеоплеер -->
+      <section class="section player-section section--bg-grey" id="section-6">
+        <div class="container player-container">
+          <h2 class="section__title">Как мы работаем</h2>
+          <div class="player">
+            <div class="player__wrapper">
+              <video class="player__video" poster="./img/decor/splashscreen.png">
+                <source src="./vid/video.mp4" type="video/mp4">
+              </video>
+              <button class="player__start">
+                <svg class="player__start-icon" alt="play icon">
+                  <use xlink:href="./img/icons/sprite.svg#play"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="player__controls">
+              <button class="player__controls-start">
+                <svg class="player__controls-start-icon" alt="play icon">
+                  <use xlink:href="./img/icons/sprite.svg#play"></use>
+                </svg>
+              </button>
+              <button class="player__paused"></button>
+              <div class="player__playback">
+                <div class="player__playback-line">
+                  <div class="player__playback-circle"></div>
+                </div>
+              </div>
+              <div class="player__volume">
+                <button class="player__mute">
+                  <svg class="player__mute-icon" alt="unmute icon">
+                    <use xlink:href="./img/icons/sprite.svg#unmute"></use>
+                  </svg>
+                </button>
+                <div class="player__playback-vol">
+                  <div class="player__volume-line"></div>
+                  <div class="player__volume-circle"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Заказ -->
-      <section class="section order-section">
+      <section class="section order-section" id="section-7">
         <div class="container">
           <h2 class="section__title section__title--green">Закажите доставку</h2>
           <form id="order-form" class="form">
-            <input type="hidden" name="to" value="stolena-Lad@yandex.ru">
+            <input type="hidden" name="to" value="test@mail.ru">
             <div class="form__col">
               <div class="form__row">
                 <label class="form__block">
@@ -644,10 +742,8 @@
         </div>
       </section>
       <!-- Контакты -->
-      <section class="section map-section">
-        <div class="map">
-          <img src="./img/bg/map.jpg" alt="карта" class="map__img">
-        </div>
+      <section class="section map-section" id="section-8">
+        <div id="map" class="map"></div>
         <footer class="footer">
           <div class="container footer__container">
             <address class="contacts">
@@ -694,64 +790,64 @@
     </div>
   </div>
 
-  <!-- fullscreen меню -->
+  <!-- полноэкранное меню -->
   <div class="fullscreen-menu">
     <a href="#" class="fullscreen-menu__close"></a>
     <nav class="menu menu--vertical">
       <ul class="menu__list">
         <li class="menu__item">
-          <a href="#" class="menu__link">О нас</a>
+          <a href="#section-1" class="menu__link">О нас</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">Батончики</a>
+          <a href="#section-2" class="menu__link">Батончики</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">Команда</a>
+          <a href="#section-3" class="menu__link">Команда</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">Меню</a>
+          <a href="#section-4" class="menu__link">Меню</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">Отзывы</a>
+          <a href="#section-5" class="menu__link">Отзывы</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">Как мы работаем</a>
+          <a href="#section-6" class="menu__link">Как мы работаем</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">Контакты</a>
+          <a href="#section-8" class="menu__link">Контакты</a>
         </li>
       </ul>
     </nav>
   </div>
-  <!-- fixed меню -->
+  <!-- боковое меню -->
   <nav class="fixed-menu">
-    <ul class="fixed-menu__list">
-      <li class="fixed-menu__item fixed-menu__item--active">
-        <a class="fixed-menu__link"></a>
+    <ul class="fixed-menu__list fixed-menu__list--theme-dark">
+      <li class="fixed-menu__item active">
+        <a href="#section-0" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#section-1" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#section-2" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#section-3" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#section-4" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#section-5" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#section-6" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#section-7" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#section-8" class="fixed-menu__link"></a>
       </li>
     </ul>
   </nav>
@@ -766,12 +862,18 @@
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script src="./js/onePageScroll.js"></script>
   <script src="./js/fullscreenMenu.js"></script>
   <script src="./js/slider.js"></script>
   <script src="./js/accordeon.js"></script>
+  <script src="./js/menuAccordeon.js"></script>
   <script src="./js/tabs.js"></script>
+  <script src="./js/player.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
   <script src="./js/modal.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+  </script>
+  <script src="./js/map.js"></script>
 </body>
 
 </html>
