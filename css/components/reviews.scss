@@ -1,3 +1,40 @@
+.reviews-section {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: url("../img/decor/straw.png");
+    right: 1%;
+    top: rem(66px);
+
+    @include tablets {
+      right: -3%;
+      top: 4%;
+    }
+
+    @media screen and (max-width: 480px) and (max-height: 640px) {
+      top: 0;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: url("../img/decor/berries-and-leaf.png");
+    left: 0;
+    bottom: -16%;
+    z-index: $z-decor;
+
+    @include tablets {
+      content: url("../img/decor/berries-and-leaf-size-s.png");
+      bottom: -8%;
+    }
+
+    @media screen and (max-width: 480px) and (max-height: 640px) {
+      bottom: -14%;
+    }
+  }
+}
+
 .reviews__list {
   position: relative;
   min-height: 280px;
@@ -15,6 +52,11 @@
   @include phones {
     padding: rem(58px) 0 0 0;
     margin-bottom: rem(50px);
+  }
+
+  @media screen and (max-width: 480px) and (max-height: 640px) {
+    padding: rem(24px) 0 0 0;
+    margin-bottom: rem(20px);
   }
 
   &::before {

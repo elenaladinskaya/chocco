@@ -1,3 +1,29 @@
+.slider-section {
+  position: relative;
+
+  &::after {
+    content: url("../img/decor/blueberry-and-leaf.png");
+    position: absolute;
+    right: 0;
+    bottom: -14%;
+    pointer-events: none;
+
+    @include tablets {
+      content: url("../img/decor/blueberry-and-leaf-size-s.png");
+      bottom: -20%;
+    }
+
+    @media screen and (max-width: 480px) and (max-height: 640px) {
+      bottom: -28%;
+    }
+  }
+}
+
+.slider-container {
+  position: relative;
+  z-index: 100;
+}
+
 .slider__btn {
   position: absolute;
   top: 50%;

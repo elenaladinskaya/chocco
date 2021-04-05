@@ -2,20 +2,41 @@
   color: #fff;
   background: url(../img/bg/bars-bg.jpg) center center/cover no-repeat;
   justify-content: flex-start;
-  padding-top: rem(120px);
-  padding-left: 8%;
+  padding-top: rem(104px);
+  padding-left: rem(84px);
   position: relative;
+
+  @include tablets {
+    padding-top: rem(82px);
+    padding-left: rem(40px);
+  }
+
+  @include phones {
+    padding-top: rem(78px);
+    padding-left: rem(14px);
+  }
 
   &::before {
     content: url(../img/decor/rasp.png);
     position: absolute;
     top: rem(-66px);
     left: 3%;
+
+    @include tablets {
+      content: url(../img/decor/rasp-size-s.png);
+      left: rem(35px);
+    }
+
+    @include phones {
+      top: rem(-40px);
+      left: rem(6px);
+    }
   }
 
   &__title {
     text-align: left;
     color: #fff;
+    margin-bottom: 0;
   }
 }
 
@@ -40,11 +61,7 @@
 
 .products-menu__title {
   position: relative;
-  width: rem(100px);
-
-  @include phones {
-    width: rem(90px);
-  }
+  width: rem(102px);
 }
 
 .products-menu__img {
@@ -78,10 +95,15 @@
 
 .products-menu__content-text {
   font-size: rem(16px);
-  line-height: 1.7;
-  padding: rem(32px) rem(80px) rem(32px) rem(38px);
+  line-height: 1.5;
+  padding: rem(30px) rem(80px) rem(32px) rem(38px);
 
   @include tablets {
-    padding: rem(32px) rem(53px);
+    line-height: 1.6;
+    padding: rem(40px) rem(40px);
+  }
+
+  @include phones {
+    line-height: 1.9;
   }
 }

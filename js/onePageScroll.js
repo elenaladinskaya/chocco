@@ -97,11 +97,11 @@ $(window).on("wheel", e => {
   const deltaY = e.originalEvent.deltaY; //величина скролла
   const scroller = viewportScroller();
 
-  if (deltaY > 0) {//если скролл в положительную сторону - следующая секция
+  if (deltaY > 0) {//если скролл плюсовой - следующая секция
     scroller.next();
   }
 
-  if (deltaY < 0) {//если скролл в отрицательную - предыдущая секция
+  if (deltaY < 0) {//если скролл минусовой - предыдущая секция
     scroller.prev();
   }
 });
@@ -117,11 +117,11 @@ $(window).on("keydown", (e) => {
 
   //если действие совершается не в теге input или textarea, то выполняем код
   switch (e.keyCode) {//keyCode - цифровое значение клавиши
-    case 38: //prev
+    case 38: 
       scroller.prev();
       break;
 
-    case 40: //next
+    case 40: 
       scroller.next();
       break;
   }
