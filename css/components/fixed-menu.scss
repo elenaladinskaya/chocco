@@ -7,9 +7,12 @@
   @include tablets {
     display: none;
   }
-}
 
-.fixed-menu__list {
+  .fixed-menu__item--active {
+    .fixed-menu__link {
+      border-color: #fff;
+    }
+  }
 
   &--theme-dark {
     .fixed-menu__link::before {
@@ -22,7 +25,7 @@
       }
     }
 
-    .fixed-menu__item.active {
+    .fixed-menu__item--active {
       .fixed-menu__link {
         border-color: $black;
       }
@@ -38,12 +41,6 @@
   }
 
   &:hover {
-    .fixed-menu__link {
-      border-color: #fff;
-    }
-  }
-
-  &.active {
     .fixed-menu__link {
       border-color: #fff;
     }

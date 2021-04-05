@@ -1,5 +1,5 @@
 .section {
-  height: 100vh;
+  height: 100%;
   min-height: rem(650px);
   display: flex;
   flex-direction: column;
@@ -8,10 +8,6 @@
 
   &--bg-grey {
     background-color: $lightGrey;
-  }
-
-  &--fullscreen {
-    display: block;
   }
 }
 
@@ -42,20 +38,6 @@
 
     @include phones {
       margin-bottom: rem(32px);
-    }
-  }
-
-  &--white {
-    color: #fff;
-  }
-
-  &--left {
-    padding-top: rem(120px);
-    padding-left: 8%;
-    margin-right: rem(44px);
-
-    &.hidden {
-      display: none;
     }
   }
 
