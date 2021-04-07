@@ -1,8 +1,9 @@
-// функция перевода пикселей в рем
+// Функция перевода px в rem
 @function rem($px) {
   @return $px / $baseFontSize + 0rem;
 }
 
+// Медиа-запросы
 @mixin tablets {
   @media screen and (max-width: $tablets) {
     @content;

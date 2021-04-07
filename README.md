@@ -1,1 +1,1 @@
-# chocco
+# CHOCCO project

@@ -4,6 +4,7 @@
   border: 4px solid transparent;
   border-radius: 50%;
   overflow: hidden;
+  transition: border .2s;
 
   @include tablets {
     width: rem(78px);

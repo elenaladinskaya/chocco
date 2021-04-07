@@ -1,3 +1,4 @@
+(function () {
 const isPhones = window.matchMedia('(max-width: 480px)').matches; //медиа-запрос ширины экрана
 const isTablets = window.matchMedia('(max-width: 840px)').matches; //медиа-запрос ширины экрана
 
@@ -77,3 +78,4 @@ $(".products-menu__title").on("click", e => {
     }
   }
 });
+})()

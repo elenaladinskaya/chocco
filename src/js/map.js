@@ -1,3 +1,4 @@
+(function () {
 let myMap;
 
 const init = () => {
@@ -44,3 +45,4 @@ const init = () => {
 }
 
 ymaps.ready(init);
+})()
