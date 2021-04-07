@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // width: $containerWidth;
+  outline: none;
 
   @include tablets {
     flex-direction: column;
