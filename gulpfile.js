@@ -46,6 +46,12 @@ task('copy:vid', () => {
     .pipe(reload({ stream: true }));
 });
 
+// Задача копирование в папку docs файлов из папки dist (npm run gulp copy-docs) для заливки на github
+task('copy-docs', () => {
+  return src(`${DIST_PATH}/**`)
+    .pipe(dest('docs'))
+});
+
 // Задача компиляция sass в css
 task('styles', () => {
   return src([//массив стилей для обработки
